@@ -93,4 +93,4 @@ export function dev() {
   watch("src/img/**/*{.png,.jpg}", imagenes); // busqueda de imagenes
 }
 
-export default series(crop, js, css, imagenes, dev);
+export default series(crop, js, css, imagenes); /// dev para activar el watcher
