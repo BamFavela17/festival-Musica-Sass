@@ -1,5 +1,6 @@
 @use '../base/Variables' as v;
 @use '../base/mixins' as m;
+@use 'sass:color';
 
 .contenedor-boletos {
     background-color: v.$verde;
@@ -82,7 +83,7 @@
                 color: v.$blanco;
 
                 &:hover {
-                    background-color: darken(v.$morado, 20);
+                    background-color: color.adjust(v.$morado, $lightness: -20%);
                 }
             }
         }
